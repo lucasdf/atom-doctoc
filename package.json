@@ -1,0 +1,45 @@
+{
+  "name": "atom-doctoc",
+  "main": "./lib/main.js",
+  "version": "0.0.0",
+  "description": "Atom plugin for the doctoc library. Generates table of contents for markdown files.",
+  "license": "MIT",
+  "scripts": {
+    "test": "apm test",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucasdf/atom-doctoc.git"
+  },
+  "engines": {
+    "atom": ">=1.17.0 <2.0.0"
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "rules": {
+      "global-require": "off",
+      "import/no-unresolved": [
+        "error",
+        {
+          "ignore": [
+            "atom"
+          ]
+        }
+      ]
+    },
+    "globals": {
+      "atom": true
+    },
+    "env": {
+      "node": true,
+      "browser": true
+    }
+  },
+  "devDependencies": {
+    "eslint": "^4.4.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "jasmine-fix": "^1.2.0"
+  }
+}
